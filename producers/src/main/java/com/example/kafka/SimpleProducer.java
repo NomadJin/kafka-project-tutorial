@@ -1,7 +1,6 @@
 package com.example.kafka;
 
 import java.util.Properties;
-import java.util.logging.Logger;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -11,7 +10,7 @@ public class SimpleProducer {
 
 	public static void main(String[] args) {
 
-		String topic = "simple-producer";
+		String topic = "simple-topic";
 
 		Properties props = new Properties();
 		props.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "dev-tools:9092,dev-tools:9093,dev-tools:9094");
